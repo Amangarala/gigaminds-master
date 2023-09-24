@@ -1,0 +1,149 @@
+.container{
+    @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;500;700&family=Poppins:ital,wght@0,300;0,500;1,200&family=Quicksand&display=swap');
+    position: sticky;
+    top: 0px;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+    display: flex;
+}
+
+.navbar {
+    /* background: rgba(0, 128, 0, 0.384); */
+    /* height: 10vh; */
+    line-height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 10px;
+    z-index: 9999;
+    
+    &.active{
+        
+        background-color: #fff;
+        li{
+            color: #000000b1;
+        }
+           
+            
+        }
+        transition: 0.5s ease-in-out;
+        
+    }
+
+
+.logo {
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+}
+
+.nav-links li {
+    color: rgb(243, 236, 236);
+    font-size: 20px;
+    padding: 0 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    &.active{
+        color: black;
+    }
+}
+
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.hero h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+.button_create {
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #1dbf73;
+    background-color: #1dbf73;
+
+
+    &:hover {
+        color: #1dbf73;
+        background-color: #fafafa;
+        border-color: #1dbf73;
+        transition: all .2s ease-in-out;
+    }
+}
+.mobile-menu-icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links-mobile {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        box-shadow: rgba(50, 50, 93, .23) 0 30px 30px -20px;
+        left: 0;
+        top: 10%;
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+        background-color: #ffffff;
+    }
+
+    .button_create {
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 1px solid #1dbf73;
+        background-color: #1dbf73;
+    
+        &:hover {
+            color: #1dbf73;
+            background-color: #fafafa;
+            border-color: #1dbf73;
+            transition: all .2s ease-in-out;
+        }
+    }
+    ul li {
+        padding: 0px 5%;
+        width: 100%;
+        transition: all 0.5s ease-in-out;
+        text-align: center;
+        color: rgb(22, 22, 22);
+    }
+
+    .mobile-menu-icon {
+        position: absolute;
+        display: block;
+        right: 20px;
+        color: #000000b1;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+    }
+}
+
+}

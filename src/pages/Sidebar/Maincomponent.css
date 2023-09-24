@@ -1,0 +1,22 @@
+/* MainContent.css */
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 0;
+  }
+  
+  /* Add your other styles for the main content here */
+  
+  .w3-button {
+    background-color: #007bff; /* Teal color for the menu icon */
+    color: #fff; /* Text color for the menu icon */
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+  
+  .w3-button:hover {
+    background-color: #0056b3; /* Teal color on hover */
+  }
+  

@@ -1,0 +1,64 @@
+.single__course__item {
+  /* border: 1px solid #ccc; */
+  /* background-color: rgb(241, 241, 241); */
+  padding-right: 10px;
+  /* padding: 15px; */
+  box-shadow: 0 0 30px 0 rgba(106, 106, 106, 0.286);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row; /* Display each card as a column */
+  /* align-items: center; */
+  column-gap: 30px;
+  margin-bottom: 20px;  /*Add margin to create space between rows  */
+ /* Set width for 4 columns with margin */
+  /* Adjust the following styles as needed for your design */
+  text-align: center;
+  margin: 20px;
+  width:430px;
+  height:230px;
+
+  
+  
+}
+
+.course__img img {
+  /* border-radius: 10px; */
+  width: 100px; /* Adjust image width */
+  height: 100%; /* Maintain aspect ratio */
+}
+
+.enroll a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 2rem;
+  color: aqua;
+}
+
+.lesson,
+.students,
+.rating {
+  font-size: 1rem;
+  color: #0a2b1e;
+  font-weight: 500;
+  text-align: left;
+  /* margin-left: 20px; */
+}
+
+.lesson i,
+.students i,
+.rating i {
+  font-weight: 400;
+}
+
+.course__title {
+  line-height: 2rem;
+  font-size: 20px;
+  text-align: left;
+}
+
+.course__details{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  text-align: left;
+}

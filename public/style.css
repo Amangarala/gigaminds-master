@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  
+  .container1 {
+
+    /* width: 100%; */
+    /* margin-left: 100px; */
+    /* height: 300px; */
+    column-gap: 100px;
+    display: flex;
+    /* flex-direction: column; */
+    /* text-align: center;
+    align-items: center; */
+  }
+  
+  
+  
+  
+  .container1 h1 {
+    color: #ffffff;
+    font-size: 3vw;
+  
+    align-items: center;
+  
+    /* margin-left: 200px; */
+  }
+  
+  /* .container1 h1::after {
+    display: block;
+    content: 'Don\'t worry just Join Us and Skip the Waiting Line.';
+    color: rgb(213, 213, 213);
+    font-size: 1vw;
+  } */
+  
+  .container1 h1 span {
+    color: green;
+  }
+  
+  .plate {
+    animation: rotate 250s infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  .wrapper {
+    /* Other styles for your wrapper container */
+    min-height: 100vh; /* Set your desired height or adjust as needed */
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    padding-bottom: 50px;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.736),
+      rgba(0, 0, 0, 0.736),
+      rgba(0, 0, 0, 0.736)),
+      url("./images/back3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* Add the following to display the image in full width */
+    background-position: center;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  
+  .search_box {
+    display: flex;
+    width: 70%; /* Ensure the search box takes up the available width */
+    /* margin: 0 auto; Center horizontally */
+    position: relative; /* For positioning the button */
+  }
+  
+  .input_search {
+    flex: 1; /* Allow the input to grow and take up remaining space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .search_btn {
+    background-color: transparent;
+    color: green;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    right: 0; /* Position it at the right edge of the search box */
+    top: 0; /* Position it at the top of the search box */
+    bottom: 0; /* Position it at the bottom of the search box */
+    display: flex;
+    align-items: center; /* Center vertically */
+  }
+  
+  
+  input::placeholder {
+    color: #7f7f7f;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #000000;
+  }
+  
+  :-ms-input-placeholder {
+    color: #000000;
+  }
+
+
+
+
+
+  .middle{
+    text-align: center;
+    color: #000000;
+    /* margin-top: 280px; */
+    /* width: 60vw;
+    height: 100px; */
+    /* border-radius: 20px; */
+    /* background-color: rgba(0, 128, 0, 0.79); */
+  }
+
+
+
+
+  .about-img {
+    /* margin-top: 200px; */
+    /* margin: auto; */
+    flex: 1 1 400px;
+    /* padding: 30px; */
+    /* Remove the transform and animation properties */
+  }
+  
+  .about-text {
+    flex: 1 1 400px;
+    padding: 30px;
+    /* margin: auto; */
+    /* Remove the transform and animation properties */
+  }
+  
+  .about-img img {
+    display: block;
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  
+  .Start {
+    text-align: center;
+    font-size: 1.5vw;
+  }
+  
+
+
+
+  .allbook{
+    display: flex;
+  }
+
+  .book{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .book img{
+width: 200px;
+  }
+
+  .top h1 span {
+    color: orange;
+  }
+  
+  .boxes {
+    column-gap: 30px;
+    row-gap: 30px;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    /* flex-wrap: wrap; */
+    /* margin-inline: 20px; */
+  }
+  
+  .box {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    /* height: 400px; */
+    width: 250px;
+    /* padding: 10px; */
+    /* border-radius: 20px; */
+    background-color: #f3f3f3;
+    /* box-shadow: 0 0 30px 0 #dfdfdff8; */
+  }
+  
+  
+  
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .box img:hover {
+    filter: brightness(50%);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* CSS */
+  .button-28 {
+
+    margin-left: 40%;
+    /* margin-top: 150px; */
+    /* appearance: none; */
+    background-color: transparent;
+    border: 1px solid rgb(139, 139, 139);
+    /* border-radius: 15px; */
+    /* box-sizing: border-box; */
+    color: #3B3B3B;
+    cursor: pointer;
+    /* display: inline-block; */
+    font-size: 16px;
+    /* line-height: normal; */
+    /* margin-left: 100px; */
+    min-height: 60px;
+    /* min-width: 0; */
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 20%;
+    will-change: transform;
+  }
+  
+  .button-28:disabled {
+    pointer-events: none;
+  }
+  
+  .button-28:hover {
+    color: #000000;
+    border-color: transparent;
+    background-color: #1c2c5217;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-28:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  

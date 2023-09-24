@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+.container{
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+}
+.content{
+  padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.active-content{
+  display:block;
+}
+.left {
+  float:left;
+  width:25%;
+  height:20px;
+}
+.middle{
+  float:left;
+  width:50%;
+  height:20px;
+}
+.right{
+  float:right;
+  width:25%;
+  height:20px;
+}
+.single-tab{
+  background-color: white;
+  margin-right:10px;
+  cursor:pointer;
+}
+.single-tab h3{
+  display:block;
+  /* padding:10px 16px; */
+  border-radius:4px;
+  color:#3c3c3c;
+  font-size: 14px;
+  font-weight:600;
+} 
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 30px; */
+}
+
+.single-tab {
+  flex: 1;
+  text-align: center;
+  padding: 16px;
+}
+/* .tabs{
+width:300px;
+} */
+.active-tab{
+  background-color: blue;
+  position:relative;
+
+}
+.active-tab::before{
+  position:absolute;
+  bottom:-5px;
+  left:50px;
+  transform:translateX(-50%);
+  content:'';
+  width:0;
+  height:0;
+    border-width:5px 5px 0 5px;
+  border-color: #18dcff transparent transparent transparent ;
+}}
+ 
